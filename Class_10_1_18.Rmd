@@ -6,18 +6,20 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
 library(readr)
 library(tidyverse)
 ```
 
-```{r}
+Purpose of Document is to Investigate Italian Party Vote Shares
+
+```{r, message = FALSE}
 
 raw <- read_csv("~/Desktop/class_10_1_18/polls_IT-parliament_2018-10-01.csv")
 
 raw %>%
   select()
-
+raw
 
 glimpse(raw)
 summary(raw)
